@@ -1,0 +1,20 @@
+<?php
+class Dashboard extends Admin_Controller{
+    function __construct() {
+        parent::__construct();
+    }
+    
+    public function index(){
+        
+        $this->load->view('admin/_layout_main', $this->data);
+    }
+    
+    public function modal(){
+        $this->load->view('admin/_layout_modal', $this->data);
+    }
+} 
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+?>
